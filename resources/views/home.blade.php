@@ -1,5 +1,9 @@
 @extends('layouts.main-layout')
 
 @section('content')
-    TEST
+
+    @foreach ($movies as $movie)
+        <x-movie-card :movie="$movie"/>
+    @endforeach
+
 @endsection
